@@ -1,17 +1,6 @@
-<form class="form-signin">
-<div class="row">
-	<form class="form-signin">
-		<h1 class="h3 mb-3 font-weight-normal">{{ title }}</h1>
-		<label for="inputEmail" class="sr-only">Login</label>
-		<input type="email" id="inputEmail" class="form-control" placeholder="Login" required autofocus>
-		<label for="inputPassword" class="sr-only">Senha</label>
-		<input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
-		<div class="checkbox mb-3">
-			<label>
-				<input type="checkbox" value="remember-me"> Lembrar me
-			</label>
-		</div>
-		<button class="btn btn-lg btn-primary btn-block" type="submit">Logar</button>
-		<p class="mt-5 mb-3 text-muted">&copy; CrudMongoDB 2019</p>
-	</form>
-</div>
+<p> {{ title }} </p>
+<h1>Angular Router</h1>
+<nav>
+  <a routerLink="/app" routerLinkActive="active">App</a>
+  <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+</nav>
