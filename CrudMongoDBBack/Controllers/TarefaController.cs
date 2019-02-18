@@ -24,18 +24,18 @@ namespace CrudMongoDB.Controllers
         [HttpGet("tarefas")]
         public ActionResult<IEnumerable<Tarefa>> Get()
         {
-            return _tarefaService.Get();
+            return OK(_tarefaService.Get());
         }
 
         // GET api/values/5
         [HttpGet("tarefas/{id}")]
-        public ActionResult<Tarefa> Get(string id)
+        public ActionResult<Tarefa> Get(int id)
         {
             if (String.IsNullOrEmpty(id)) 
             {
                 return NoContent();
             }
-            return _tarefaService.Get(id);
+            return OK(_tarefaService.Get(id);
         }
 
         // POST api/values
@@ -47,14 +47,14 @@ namespace CrudMongoDB.Controllers
 
         // PUT api/values/5
         [HttpPut("tarefas/{id}/{tarefa}")]
-        public void Put(string id, [FromBody] Tarefa tarefa)
+        public void Put(int id, [FromBody] Tarefa tarefa)
         {
             _tarefaService.Update(id, tarefa);
         }
 
         // DELETE api/values/5
         [HttpDelete("tarefas/{id}")]
-        public void Delete(string id)
+        public void Delete(int id)
         {
             _tarefaService.Remove(id);
         }

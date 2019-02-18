@@ -13251,11 +13251,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\moren\\Documents\\CrudMongoDB\\CrudMongoDB.csproj",
+      "projectUniqueName": "c:\\Users\\moren\\Documents\\CrudMongoDB\\CrudMongoDBBack\\CrudMongoDB.csproj",
       "projectName": "CrudMongoDB",
-      "projectPath": "C:\\Users\\moren\\Documents\\CrudMongoDB\\CrudMongoDB.csproj",
+      "projectPath": "c:\\Users\\moren\\Documents\\CrudMongoDB\\CrudMongoDBBack\\CrudMongoDB.csproj",
       "packagesPath": "C:\\Users\\moren\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moren\\Documents\\CrudMongoDB\\obj\\",
+      "outputPath": "c:\\Users\\moren\\Documents\\CrudMongoDB\\CrudMongoDBBack\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

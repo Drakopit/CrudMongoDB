@@ -4,8 +4,6 @@ namespace CrudMongoDB.Models
 {
     public class Usuario
     {
-        [BsonId]
-        [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }

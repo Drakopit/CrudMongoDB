@@ -22,7 +22,7 @@ namespace CrudMongoDB.Services
             return _tarefas.Find(tarefa => true).ToList();
         }
 
-        public Tarefa Get(string id)
+        public Tarefa Get(int id)
         {
             return _tarefas.Find<Tarefa>(tarefa => tarefa.Id == id).FirstOrDefault();
         }
@@ -33,17 +33,17 @@ namespace CrudMongoDB.Services
             return tarefa;
         }
 
-        public void Update(string id, Tarefa tarefaIn)
+        public void Update(int id, Tarefa tarefaIn)
         {
             _tarefas.ReplaceOne(tarefa => tarefa.Id == id, tarefaIn);
         }
 
         public void Remove(Tarefa tarefaIn)
         {
-            _tarefas.DeleteOne(tarefa => tarefa.Id == tarefaIn.Id);
+            _tarefas.DeleteOne(tarefa => tarefa.Id == tarefaIn.GetId());
         }
 
-        public void Remove(string id)
+        public void Remove(int id)
         {
             _tarefas.DeleteOne(tarefa => tarefa.Id == id);
         }
